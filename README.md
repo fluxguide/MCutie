@@ -1,4 +1,4 @@
-# README #
+# MCutie – A simple MQTT Broker and Webapp #
 
 This is a repository for simple MQTT Broker and Webapp for testing. It will be used in the EOT Project.
 
@@ -13,8 +13,10 @@ For Testing Purposes enter the following server information:
 
 **Port:** 1884
 
+*Please note:* Fair use policy. This server is only meant for testing and demo purposes.
 
-## What is this repository for? ##
+
+## Contents of this repository ##
 
 * MCutie: A simple MQTT Testing Webapp
 * Broker: A simple MQTT Broker
