@@ -1,0 +1,213 @@
+html, body {
+	height: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+button {
+	border: 1px solid #fff;
+    color: #000;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 2%;
+    font-size: 14px;
+    display: block;
+}
+
+/** Global States **/
+body.disconnected .main-container {
+	opacity: 0.3;
+}
+body.disconnected input, .main-container.disconnected button {
+
+}
+
+
+textarea, input {
+	font-size: 14px;
+	border: none;
+	color: #fff;
+	margin: 4px 0;
+}
+input {
+	min-height: 2em;
+	-webkit-transition: background-color 200ms;
+	-moz-transition: background-color 200ms;
+	-o-transition: background-color 200ms;
+	-ms-transition: background-color 200ms;
+	transition: background-color 200ms;
+}
+
+input.error {
+	background-color: #c70a0a;
+}
+
+
+::-webkit-input-placeholder {
+   color: #ccc;
+   font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #ccc;
+   font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #ccc;
+   font-style: italic;
+}
+
+:-ms-input-placeholder {
+   color: #ccc;
+   font-style: italic;
+}
+
+
+
+
+/** Connection Container / Header **/
+.connection-container {
+	background-color: #666;
+	border-left: 10px solid #3cf53c;
+	padding: 1px 10px 10px;
+}
+body.disconnected .connection-container {
+	border-left-color: red;
+}
+body.offline .connection-container {
+	border-left-color: yellow;
+}
+
+
+.connection-container .connection-input {
+	display: inline-block;
+	color: #000;
+	padding: 6px;
+	border: 1px solid transparent;
+}
+.connection-container .connection-input.connection-input-ip {
+	width: 100px;
+}
+.connection-container .connection-input.connection-input-port {
+	width: 50px;
+}
+.connection-container .connection-input:disabled {
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.connection-container .connection-button {
+	margin: 4px 2%;
+}
+.connection-container .connection-disconnect-button {
+	display: block;
+}
+body.disconnected .connection-container .connection-disconnect-button {
+	display: none;
+}
+.connection-container .connection-connect-button {
+	display: none;
+}
+body.disconnected .connection-container .connection-connect-button {
+	display: block;
+}
+
+
+
+
+/** Main Container **/
+.main-container {
+
+}
+
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    height: 100%;
+    }
+
+.flex-item {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+
+
+.wrapper {
+	min-width: 300px;
+	width: 50vw;
+	padding: 10px;
+}
+
+
+.wrapper-left {
+	background-color: #225474;
+}
+.wrapper-right {
+	background-color: #1b694f;
+	border-left: 1px dashed #fff;
+}
+
+.wrapper-left textarea, .wrapper-left input {
+	background-color: #2e709a;
+}
+
+.wrapper-right textarea, .wrapper-right input {
+	background-color: #2a8b61;
+}
+
+.main-container textarea, .main-container input {
+	position: relative;
+	color: #fff;
+	width: 96%;
+	margin: 4px 0;
+	padding: 2%;
+}
+.main-container button {
+    padding: 20px;
+}
+
+
+section.buttons {
+	text-align: center;
+}
+
+
+.log-output {
+	height: 30vh;
+}

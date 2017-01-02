@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>MCutie: A simple MQTT Test GUI</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+
+</head>
+<body class="disconnected">
+
+    <!-- Connection -->
+    <section class="connection-container">
+        <h1>Connection</h1>
+
+        <div class="flex-container">
+            <input type="text" name="connection-server-input-ip" class="connection-input connection-input-ip flex-item" placeholder="IP" />
+            <input type="text" name="connection-server-input-port" class="connection-input connection-input-port flex-item" placeholder="Port" />
+            <button class="connection-button connection-connect-button flex-item">Connect</button>
+            <button class="connection-button connection-disconnect-button flex-item">Disconnect</button>
+        </div>
+
+    </section>
+
+
+    <section class="main-container flex-container ">
+
+        <!-- Subscriber -->
+        <div class="wrapper-left flex-item ">
+            <h1>Subscriber</h1>
+
+            <textarea class="log-output subscriber-log-output" placeholder="log output" disabled></textarea>
+
+            <input type="text" name="subscriber-topic-input" class="subscriber-topic-input" placeholder="enter topic" /><br/>
+
+            <section class="buttons">
+                <button class="subscriber-subscribe-button">Subscribe</button>
+                <button class="subscriber-unsubscribe-button">Unsubscribe from all topics</button>
+                <button class="subscriber-clear-log-button">Clear Log</button>
+            </section>
+
+        </div>
+
+
+        <!-- Publisher -->
+        <div class="wrapper-right flex-item ">
+            <h1>Publisher</h1>
+
+            <textarea class="log-output publisher-log-output" placeholder="log output" disabled></textarea>
+
+            <input type="text" name="publisher-topic-input" class="publisher-topic-input" placeholder="enter topic" /><br/>
+            <input type="text" name="publisher-message-input" class="publisher-message-input" placeholder="enter message" /><br/>
+
+            <section class="buttons">
+                <button class="publisher-send-message-button">Send Message</button>
+                <button class="publisher-clear-log-button">Clear Log</button>
+            </section>
+
+        </div>
+
+    </section><!-- end .flex-container -->
+
+
+
+    <script src="./mqtt-2.1.3.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
