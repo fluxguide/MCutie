@@ -5,7 +5,7 @@ This is a repository for simple MQTT Broker and Webapp for testing. It will be u
 Copyright 2016 Fluxguide
 
 ## Demo ##
-Open the (Demo-App)[http://40.68.84.0/mqtt/]
+Open the [Demo-App](http://40.68.84.0/mqtt/)
 
 For Testing Purposes enter the following server information:
 
