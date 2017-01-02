@@ -5,7 +5,7 @@ This is a repository for simple MQTT Broker and Webapp for testing.
 Developed and maintained by [Fluxguide](https://www.fluxguide.com) as part of the [Eyes of Things Project](http://eyesofthings.eu/?page_id=228).
 
 ## Demo ##
-Open the [Demo-App](http://40.68.84.0/mqtt/)
+Open the [Demo-App](http://40.68.84.0/mcutie/app/)
 
 For Testing Purposes enter the following server information:
 
