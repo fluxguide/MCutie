@@ -1,8 +1,8 @@
 # MCutie – A simple MQTT Broker and Webapp #
 
-This is a repository for simple MQTT Broker and Webapp for testing. It will be used in the EOT Project.
+This is a repository for simple MQTT Broker and Webapp for testing. 
 
-Copyright 2016 Fluxguide
+Developed and maintained by [Fluxguide](https://www.fluxguide.com) as part of the [Eyes of Things Project](http://eyesofthings.eu/?page_id=228).
 
 ## Demo ##
 Open the [Demo-App](http://40.68.84.0/mqtt/)
@@ -62,3 +62,6 @@ Default port is 1883
 ### Broker ###
 
 - Add persistence layer for logging etc
+
+## License ##
+MIT (see LICENCE)
