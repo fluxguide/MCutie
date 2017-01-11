@@ -16,9 +16,15 @@ For Testing Purposes enter the following server information:
 *Please note:* Fair use policy. This server is only meant for testing and demo purposes.
 
 
-## Contents of this repository ##
+## Screenshot ##
+![MCutie Screenshot](http://40.68.84.0/mcutie/mcutie_screenshot.png)
 
+
+## Contents / Features ##
 * MCutie: A simple MQTT Testing Webapp
+  * Connect: connect to a MQTT broker
+  * Publisher: publish messages to topics
+  * Subscriber: subscribe to multiple channels
 * Broker: A simple MQTT Broker
 
 ## How do I get set up? ##
@@ -44,8 +50,9 @@ Default port is 1883
 - Hit the "Connect" Button
 
 
+## Contributing ##
 
-
+Feel free to contribute to this project by sending Pull Requests. 
 
 ## Based on ##
 
