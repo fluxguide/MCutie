@@ -32,6 +32,7 @@ For Testing Purposes enter the following server information:
 ### Set up and run the broker ###
 
 ```
+# clone this repository
 # change to directory /broker
 cd /broker
 # install packages
@@ -60,7 +61,7 @@ Feel free to contribute to this project by sending Pull Requests.
 
 [MQTT.JS](https://github.com/mqttjs/MQTT.js)
 
-## TODO ##
+## Next Steps ##
 
 ### Web GUI ###
 
